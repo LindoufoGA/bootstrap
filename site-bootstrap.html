@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta class="viewport" name="viewport" content="width=device-width, initial-scale=1.0 ">
-    <link rel="stylesheet" href="lib/cdn.jsdelivr.net_npm_bootstrap@5.3.2_dist_css_bootstrap.min.css">
+    <link rel="stylesheet" href="lib/cssboostrap.css">
     <style>
         body {
             background-color: #f0f0f0;
@@ -26,8 +26,8 @@
         }
         section {
             height: 100vh;
-            padding: 80px 0;
             width: 100%;
+            margin-top: 100px;
         }
         #p{
             font-size: 18px;
@@ -37,9 +37,6 @@
         }
         .card {
             margin-top: 20px;
-        }
-        .row {
-            position: ;
         }
     </style>
     <title>Bootstrap</title>    
@@ -58,9 +55,6 @@
                             <a class="nav-link active" href="#destaque">Destaque</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="#sobre">Sobre</a>
-                        </li>
-                        <li class="nav-item active">
                             <a class="nav-link" href="#contato">Contato</a>
                         </li>
                     </ul>
@@ -70,17 +64,17 @@
     </header>
     <div id="carousel-exemplo"class="carousel carousel-fade slide" data-bs-ride="carousel">
         <div class="carousel-inner position-relative">
-            <div data-bs-interval="2000" class="carousel-item active">
+            <div data-bs-interval="3000" class="carousel-item active">
                 <img class="d-block w-100" src="img//coffee-2306471_640.jpg">
                 <div class="carousel-caption">
                 </div>
             </div>
-            <div data-bs-interval="2000" class="carousel-item active">
+            <div data-bs-interval="3000" class="carousel-item">
                 <img class="d-block w-100" src="img/laptop-1478822_640.jpg">
                 <div class="carousel-caption">
                 </div>
             </div>
-            <div data-bs-interval="2000" class="carousel-item active">
+            <div data-bs-interval="3000" class="carousel-item">
                 <img class="d-block w-100" src="img/notepad-1130743_640.jpg">
                 <div class="carousel-caption">
                 </div>
@@ -97,69 +91,68 @@
                 <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="2"></button>
             </div>
         </div>
-            <section>
-                <div class="container" data-bs-spy="scroll" data-bs-target="#cabecalho">
-                    <div class="row">
-                        <h1 id="destaque">Front-end em destaque</h1>
-                        <p id="p">Os projetos não são apenas sites - são obras de arte digitais. Seu portfólio impressiona.Cada projeto é uma representação vívida de sua criatividade e experiência técnica.</p>
-                            <div class="col-4">
-                                <article class="card">
-                                <img src="/img/surf.jpg" alt="">
-                                <div class="card-overlay">
-                                    <h4 class="card-tittle">Surf Shop</h4>
-                                    <h5 class="card-subtittle">CSS Responsivo</h5>
-                                    <p>Uma loja de atigos de surf ultilizando CSS responsivo para mobile, tablet e desktop</p>
-                                    <a href="https://surf-shop-responsivo.vercel.app/" class="btn btn-primary" target="_blank">Ver projeto</a>
-                                </div> 
-                                </article>               
-                            </div>
+        <div class="container" data-bs-spy="scroll" data-bs-target="#cabecalho">
+            <section id="destaque">
+                <div class="row">
+                    <h1>Front-end em destaque</h1>
+                    <p id="p">Os projetos não são apenas sites - são obras de arte digitais. Seu portfólio impressiona.Cada projeto é uma representação vívida de sua criatividade e experiência técnica.</p>
                         <div class="col-4">
                             <article class="card">
-                                <img src="/img/img.jpeg" alt="">
-                                <div class="card-overlay">
-                                    <h4 class="card-tittle">Blog de noticias</h4>
-                                    <h5 class="card-subtittle">Jquery</h5>
-                                    <p class="card-text">Um blog de noticias ultilizando a biblioteca Jquery</p>
-                                    <a href="https://site-de-noticias-dun.vercel.app/" class="btn btn-primary" target="_blank">Ver projeto</a>
-                                </div>                
-                            </article>
+                            <img src="/img/surf.jpg" alt="">
+                            <div class="card-overlay">
+                                <h4 class="card-tittle">Surf Shop</h4>
+                                <h5 class="card-subtittle">CSS Responsivo</h5>
+                                <p>Uma loja de atigos de surf ultilizando CSS responsivo para mobile, tablet e desktop</p>
+                                <a href="https://surf-shop-responsivo.vercel.app/" class="btn btn-primary" target="_blank">Ver projeto</a>
+                            </div> 
+                            </article>               
                         </div>
-                        <div class="col-4">
-                            <article class="card">
-                                <img src="/img/img2.jpeg" alt="">
-                                <div class="card-overlay">
-                                    <h4 class="card-tittle">Galeria de fotos</h4>
-                                    <h5 class="card-subtittle">Adicionando imagens URL</h5>
-                                    <p class="card-text">Galeria de fotos ultilizando Jquery para adicionar fotos atraves da Url</p>
-                                    <a href="https://galeria-de-fotos-gamma.vercel.app/" class="btn btn-primary" target="_blank">Ver projeto</a>
-                                </div>                
-                            </article>
-                        </div>
+                    <div class="col-4">
+                        <article class="card">
+                            <img src="/img/img.jpeg" alt="">
+                            <div class="card-overlay">
+                                <h4 class="card-tittle">Blog de noticias</h4>
+                                <h5 class="card-subtittle">Jquery</h5>
+                                <p class="card-text">Um blog de noticias ultilizando a biblioteca Jquery</p>
+                                <a href="https://site-de-noticias-dun.vercel.app/" class="btn btn-primary" target="_blank">Ver projeto</a>
+                            </div>                
+                        </article>
+                    </div>
+                    <div class="col-4">
+                        <article class="card">
+                            <img src="/img/img2.jpeg" alt="">
+                            <div class="card-overlay">
+                                <h4 class="card-tittle">Galeria de fotos</h4>
+                                <h5 class="card-subtittle">Adicionando imagens URL</h5>
+                                <p class="card-text">Galeria de fotos ultilizando Jquery para adicionar fotos atraves da Url</p>
+                                <a href="https://galeria-de-fotos-gamma.vercel.app/" class="btn btn-primary" target="_blank">Ver projeto</a>
+                            </div>                
+                        </article>
                     </div>
                 </div>
-                </section>
-                <section class="z-index" id="contato">
-                    <h2 class="border-top">Contato</h2>
-                    <form>
-                        <div class="form-group">
-                            <label for="nome">Nome:</label>
-                            <input class="form-control" type="text" id="nome" placeholder="Nome">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email:</label>
-                            <input class="form-control" type="email" id="email" placeholder="Email">
-                        </div>
-                        <div class="form-group">
-                            <label for="Mensagem">Mensagem:</label>
-                            <textarea class="form-control" rows="5" placeholder="Deixe sua mensagem"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-success">Enviar</button>
-                    </form>
-                </section>
-            </div>
+            </section>
+            <section id="contato" class="container">
+                <h2 class="border-top">Contato</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input class="form-control" type="text" id="nome" placeholder="Nome">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input class="form-control" type="email" id="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <label for="Mensagem">Mensagem:</label>
+                        <textarea class="form-control" rows="5" placeholder="Deixe sua mensagem"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success">Enviar</button>
+                </form>
+            </section>
+        </div>
                 
         
 
-    <script src="lib/cdn.jsdelivr.net_npm_bootstrap@5.3.2_dist_js_bootstrap.bundle.min.js"></script>
+    <script src="lib/jsbootstrap.js"></script>
 </body>
 </html>
