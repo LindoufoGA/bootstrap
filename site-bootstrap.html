@@ -25,18 +25,30 @@
             color: #635346;
         }
         section {
-            height: 100vh;
+            height: 100%;
             width: 100%;
             margin-top: 100px;
         }
         #p{
             font-size: 18px;
         }
+
         textarea {
             resize: none;
         }
         .card {
             margin-top: 20px;
+        }
+        #contato {
+            width: 50%;
+        }
+        .card a, .nav-pills a {
+            background-color: #635346 ;
+            border: none;
+            color:#f0f0f0
+        }
+        .nav-pills li{
+            padding-left: 20px;
         }
     </style>
     <title>Bootstrap</title>    
@@ -91,23 +103,24 @@
                 <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="2"></button>
             </div>
         </div>
+    </div>
         <div class="container" data-bs-spy="scroll" data-bs-target="#cabecalho">
             <section id="destaque">
                 <div class="row">
-                    <h1>Front-end em destaque</h1>
-                    <p id="p">Os projetos não são apenas sites - são obras de arte digitais. Seu portfólio impressiona.Cada projeto é uma representação vívida de sua criatividade e experiência técnica.</p>
-                        <div class="col-4">
-                            <article class="card">
-                            <img src="/img/surf.jpg" alt="">
-                            <div class="card-overlay">
-                                <h4 class="card-tittle">Surf Shop</h4>
-                                <h5 class="card-subtittle">CSS Responsivo</h5>
-                                <p>Uma loja de atigos de surf ultilizando CSS responsivo para mobile, tablet e desktop</p>
-                                <a href="https://surf-shop-responsivo.vercel.app/" class="btn btn-primary" target="_blank">Ver projeto</a>
-                            </div> 
-                            </article>               
-                        </div>
-                    <div class="col-4">
+                    <h1>Destaque</h1>
+                        <p id="p">Os projetos não são apenas sites - são obras de arte digitais. Seu portfólio impressiona.Cada projeto é uma representação vívida de sua criatividade e experiência técnica.</p>
+                    <div class="col-sm-12 col-lg-4">
+                        <article class="card">
+                                <img src="/img/surf.jpg" alt="">
+                                <div class="card-overlay">
+                                    <h4 class="card-tittle">Surf Shop</h4>
+                                    <h5 class="card-subtittle">CSS Responsivo</h5>
+                                    <p>Uma loja de atigos de surf ultilizando CSS responsivo para mobile, tablet e desktop</p>
+                                    <a href="https://surf-shop-responsivo.vercel.app/" class="btn btn-primary" target="_blank">Ver projeto</a>
+                                </div> 
+                        </article>  
+                    </div>
+                    <div class="col-sm-12 col-lg-4">
                         <article class="card">
                             <img src="/img/img.jpeg" alt="">
                             <div class="card-overlay">
@@ -118,7 +131,7 @@
                             </div>                
                         </article>
                     </div>
-                    <div class="col-4">
+                    <div class="col-sm-12 col-lg-4">
                         <article class="card">
                             <img src="/img/img2.jpeg" alt="">
                             <div class="card-overlay">
@@ -131,7 +144,7 @@
                     </div>
                 </div>
             </section>
-            <section id="contato" class="container">
+            <section id="contato">
                 <h2 class="border-top">Contato</h2>
                 <form>
                     <div class="form-group">
@@ -146,13 +159,10 @@
                         <label for="Mensagem">Mensagem:</label>
                         <textarea class="form-control" rows="5" placeholder="Deixe sua mensagem"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-success">Enviar</button>
+                    <button type="submit" class="btn btn-success mt-2">Enviar</button>
                 </form>
             </section>
         </div>
-                
-        
-
     <script src="lib/jsbootstrap.js"></script>
 </body>
 </html>
